@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ministerio de deporte</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <picture>
+            <img src="../public/ministerioDeporte.png" alt="Logo ministerio de deporte">
+        </picture>
+        <nav>
+            <ul>
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Registrar institución</a></li>
+            </ul>     
+            <button id="boton-menu">&#9776;</button>       
+        </nav>
+    </header>
+    <!-- menu desplegable -->
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">Iniciar sesión</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Registrar institución</a></li>
+        </ul>
+    </div>
+    <!-- formularios del main -->
+    <main>
+        <section class="login">
+            <h3>Login</h3>
+            <form action="">
+                <label for="dni">
+                    <span>DNI:</span>
+                    <input type="text" id="dni" name="dni" required>
+                </label>
+                <label for="password">
+                    <span>Contraseña:</span>
+                    <input type="password" id="password" name="password" required>
+                </label>
+                <input type="submit" class="action" value="Ingresar">
+            </form>
+        </section>
+    </main>
+
+      <script src="../js/menu.js"></script>
+</body>
+</html>

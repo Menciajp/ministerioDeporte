@@ -1,0 +1,116 @@
+:root {
+    --color-primario: #005288;
+    --color-secundario:#D93232;
+  }
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html{font-size: 62.5%;}
+
+/*-----------------header-----------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100%;
+    background-color:var(--color-primario) ;
+    outline: none;
+}
+
+header picture{
+    display: flex;
+    width: 100%;
+}
+header img{
+    height: 6em;
+    padding-left: 1em;
+    align-self: center;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0%;
+    padding: 0%;
+}
+header button{
+    font-size: 320%;
+    padding: 0.5em;
+    font-weight: bolder;
+    background-color: transparent;
+    border:none;
+    color: #FFFF;
+}
+
+header ul{
+    display: none;
+}
+
+/* ---------menu desplegable----------- */
+.menu {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: -200px; /* Menú oculto por defecto */
+    transition: right 0.5s ease; /* Transición suave */
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+/*------sections del main------------*/
+main section{
+    padding: 1em;
+    font-size: 1.6rem;
+}
+
+main section form{
+    display:flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+main section h3{
+    font-size: 2.5rem;
+    padding: 0.2em;
+    border-bottom: 2px solid var(--color-secundario) ;
+}
+main section form label{
+    padding: 0.3em;
+    display: flex;
+}
+main section form label span{
+    width: 5em;
+}
+.action{
+    border: 2px solid var(--color-primario);
+    background-color: transparent;
+    width: 8em;
+    padding: 0.5em;
+    border-radius: 5px;
+    align-self: center;
+    font-weight: bold;
+}
+
+.action :hover{
+    border-color: var(--color-secundario);
+}
