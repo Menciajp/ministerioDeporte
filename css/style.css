@@ -1,6 +1,7 @@
 :root {
     --color-primario: #005288;
     --color-secundario:#D93232;
+    --color-blanco:#FBFCFC;
   }
 * {
     box-sizing: border-box;
@@ -81,6 +82,9 @@ header ul{
 main section{
     padding: 1em;
     font-size: 1.6rem;
+    margin: 4px;
+    border: 2px solid var(--color-primario);
+    border-radius: 5px;
 }
 
 main section form{
@@ -101,16 +105,23 @@ main section form label{
 main section form label span{
     width: 5em;
 }
+
+main section form label input{
+    width: 70%;
+    border:1px solid var(--color-primario);
+    border-radius: 5px;
+}
+
 .action{
     border: 2px solid var(--color-primario);
-    background-color: transparent;
+    background-color: var(--color-blanco);
     width: 8em;
-    padding: 0.5em;
+    padding: 0.1em;
     border-radius: 5px;
     align-self: center;
     font-weight: bold;
 }
 
-.action :hover{
+.action:hover{
     border-color: var(--color-secundario);
 }
