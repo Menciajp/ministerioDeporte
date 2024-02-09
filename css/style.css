@@ -125,3 +125,49 @@ main section form label input{
 .action:hover{
     border-color: var(--color-secundario);
 }
+
+/* ----------footer----------- */
+footer{
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    left: 25%;
+    color: var(--color-blanco);
+    font-size: 3.0rem;
+}
+footer img{
+    height: 6em;
+    padding-left: 1em;
+    align-self: center;
+}
+
+footer form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer form label{
+    padding: 0.5em;
+    display: flex;
+    align-items: flex-start;
+    width: 80vw;
+}
+footer form input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-blanco);
+}
+
+#motivo{
+    height: 8rem;
+}
+
+
