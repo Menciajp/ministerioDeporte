@@ -2,14 +2,27 @@
     --color-primario: #005288;
     --color-secundario:#D93232;
     --color-blanco:#FBFCFC;
-  }
+    --font-family:'Poppins', sans-serif;
+}
+  
 * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
 
-html{font-size: 62.5%;}
+html{
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Altura mínima del viewport */
+    display: flex;
+    flex-direction: column;
+}
 
 /*-----------------header-----------------*/
 header{
@@ -79,6 +92,9 @@ header ul{
   }
 
 /*------sections del main------------*/
+main{
+    height:fit-content;
+}
 main section{
     padding: 1em;
     font-size: 1.6rem;
@@ -99,17 +115,23 @@ main section h3{
     border-bottom: 2px solid var(--color-secundario) ;
 }
 main section form label{
-    padding: 0.3em;
+    padding-bottom: 0.5em;
     display: flex;
 }
 main section form label span{
-    width: 5em;
+    width: 6em;
 }
 
 main section form label input{
     width: 70%;
     border:1px solid var(--color-primario);
     border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+main section form label input:focus{
+    outline: none;
+    border: 2px solid var(--color-secundario)
 }
 
 .action{
@@ -120,6 +142,9 @@ main section form label input{
     border-radius: 5px;
     align-self: center;
     font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    font-family:var(--font-family);
 }
 
 .action:hover{
@@ -128,6 +153,8 @@ main section form label input{
 
 /* ----------footer----------- */
 footer{
+    margin-top: auto;
+    width: 100%;
     background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
@@ -151,19 +178,45 @@ footer form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 footer form label{
     padding: 0.5em;
     display: flex;
-    align-items: flex-start;
+    align-items:center;
     width: 80vw;
 }
 footer form input{
-    width: 100%;
     border-radius: 5px;
     border: 1px solid var(--color-blanco);
+    padding: 0.5em; /* Agrega sangría de 10px en todos los lados del input */
+    box-sizing: border-box; /* Hace que el ancho del texto incluya el padding y el borde */
+    width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
+    font-family: var(--font-family);
+    font-weight: 600;
+    
+}
+
+footer form input:focus{
+    outline: none;
+    border: 2px solid var(--color-secundario)
+}
+
+footer form textarea{
+    border-radius: 5px;
+    border: 1px solid var(--color-blanco);
+    padding: 0.5em; /* Agrega sangría de 10px en todos los lados del input */
+    box-sizing: border-box; /* Hace que el ancho del texto incluya el padding y el borde */
+    width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
+    font-family: var(--font-family);
+    font-weight: 600;
+    resize: none;
+}
+
+footer form textarea:focus{
+    outline: none;
+    border: 2px solid var(--color-secundario)
 }
 
 #motivo{

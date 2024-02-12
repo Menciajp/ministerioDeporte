@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Ministerio de deporte</title>
 </head>
@@ -37,11 +40,11 @@
             <h3>Login</h3>
             <form action="">
                 <label for="dni">
-                    <span>DNI:</span>
+                    <span>DNI</span>
                     <input type="text" id="dni" name="dni" required>
                 </label>
                 <label for="password">
-                    <span>Contraseña:</span>
+                    <span>Contraseña</span>
                     <input type="password" id="password" name="password" required>
                 </label>
                 <button class="action" type="submit" >Ingresar</button>
@@ -51,27 +54,27 @@
             <h3>Registro</h3>
             <form action="">
                 <label for="dni">
-                    <span>DNI:</span>
+                    <span>DNI</span>
                     <input type="number" id="dni" name="dni" required>
                 </label>
                 <label for="name">
-                    <span>Nombre:</span>
+                    <span>Nombre</span>
                     <input type="text" id="name" name="surname" autocomplete="name" required>
                 </label>
                 <label for="surname">
-                    <span>Apellido:</span>
+                    <span>Apellido</span>
                     <input type="text" id="surname" name="surname" autocomplete="family-name" required>
                 </label>
                 <label for="tel">
-                    <span>Teléfono:</span>
+                    <span>Teléfono</span>
                     <input type="tel" id="tel" name="tel" required>
                 </label>
                 <label for="email">
-                    <span>Mail:</span>
+                    <span>Mail</span>
                     <input type="email" id="email" name="email" autocomplete="email" required>
                 </label>
                 <label for="password">
-                    <span>Contraseña:</span>
+                    <span>Contraseña</span>
                     <input type="password" id="password" name="password" required>
                 </label>
                 <button class="action" type="submit" >Ingresar</button>
@@ -90,9 +93,10 @@
             <label for="name_contact">
                 <input type="text" id="name_contact" name="name_contact" autocomplete="name" placeholder="Nombre y Apellido" required>
             </label>
-            <label for="motivo" class="motivo_contacto">
-                <input type="text" id="motivo" name="motivo" placeholder="Motivo" required>
+            <label for="motivo">
+                <textarea type="text" id="motivo" name="motivo" placeholder="Motivo" required></textarea>
             </label>
+            <button class="action" type="submit" >Enviar</button>
         </form>
 
     </footer>
