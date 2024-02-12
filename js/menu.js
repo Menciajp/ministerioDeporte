@@ -42,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     top: posicion,
                     behavior: 'smooth'
                 });
+                document.documentElement.style.opacity = '1';
+                setTimeout(() => { 
+                    document.documentElement.style.overflowY = 'auto'; // Restablece después de la animación
+                }, 300);
                 menu.style.right = '-200px';
             }
         });
