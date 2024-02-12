@@ -32,6 +32,20 @@ html{
   ::-webkit-scrollbar-track {
     background-color: #f1f1f1; /* Color de la pista */
   }
+
+/* Prefijos específicos para Edge */
+::-ms-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  ::-ms-thumb {
+    background-color: var(--color-primario); /* Color del pulgar */
+  }
+  
+  ::-ms-track {
+    background-color: #f1f1f1; /* Color de la pista */
+  }
+  
 body {
     margin: 0;
     padding: 0;
