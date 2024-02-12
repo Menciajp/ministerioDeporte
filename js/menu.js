@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     top: posicion,
                     behavior: 'smooth'
                 });
+                menu.style.right = '-200px';
             }
         });
     }
