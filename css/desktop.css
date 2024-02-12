@@ -20,7 +20,7 @@ html{
 /* Estilo de la barra de desplazamiento */
 ::-webkit-scrollbar {
     width: 8px; /* Ancho de la barra de desplazamiento */
-    transition: opacity 5s ease-in-out;
+    transition: right 0.1s ease;
   }
   
   /* Estilo del pulgar de la barra de desplazamiento */
@@ -133,9 +133,10 @@ main{
 }
 main section{
     width: 100%;
+    max-width: 85vw;
     padding: 1em;
-    font-size: 1.6rem;
-    margin: 1.5em;
+    font-size: 2.0rem;
+    margin: 2.5em;
     border: 2px solid var(--color-primario);
     border-radius: 10px;
 }
@@ -165,6 +166,7 @@ main section form label input{
     border-radius: 5px;
     font-family: var(--font-family);
     font-weight: 600;
+    font-size: 2.0rem;
 }
 main section form label input:focus{
     outline: none;
@@ -179,7 +181,7 @@ main section form label input:focus{
     border-radius: 5px;
     align-self: center;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     margin-bottom: 0.5em;
     font-family:var(--font-family);
 }
@@ -215,7 +217,8 @@ footer form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    align-content: flex-start
 }
 
 footer form label{
@@ -232,6 +235,7 @@ footer form input{
     width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
     font-family: var(--font-family);
     font-weight: 600;
+    font-size: 2.0rem;
     
 }
 
@@ -248,6 +252,7 @@ footer form textarea{
     width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
     font-family: var(--font-family);
     font-weight: 600;
+    font-size: 2.0rem;
     resize: none;
 }
 
@@ -259,5 +264,3 @@ footer form textarea:focus{
 #motivo{
     height: 8rem;
 }
-
-

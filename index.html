@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1000px)">
     <title>Ministerio de deporte</title>
 </head>
 
@@ -30,15 +32,16 @@
     <!-- menu desplegable -->
     <div class="menu" id="menu">
         <ul>
-            <li><a href="#">Iniciar sesión</a></li>
+            <li><a href="#login">Iniciar sesión</a></li>
             <li><a href="#">Cerrar sesión</a></li>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Registrar institución</a></li>
+            <li><a href="#registro">Registrarse</a></li>
+            <li><a href="#registro-insti">Registrar institución</a></li>
         </ul>
     </div>
     <!-- formularios del main -->
     <main>
-        <section class="login">
+        <!-- seccion de login -->
+        <section class="login" id="login">
             <h3>Login</h3>
             <form action="">
                 <label for="dni">
@@ -52,12 +55,13 @@
                 <button class="action" type="submit">Ingresar</button>
             </form>
         </section>
-        <section class="registro">
+        <!-- seccion de registro de usuario -->
+        <section class="registro" id="registro">
             <h3>Registro</h3>
             <form action="">
-                <label for="dni">
+                <label for="dni-registro">
                     <span>DNI</span>
-                    <input type="number" id="dni" name="dni" required>
+                    <input type="number" id="dni-registro" name="dni-registro" required>
                 </label>
                 <label for="name">
                     <span>Nombre</span>
@@ -82,7 +86,8 @@
                 <button class="action" type="submit">Ingresar</button>
             </form>
         </section>
-        <section class="registro-instituto">
+        <!-- seccion de registro institucion -->
+        <section class="registro-instituto" id="registro-insti">
             <h3>Registro de Instituto</h3>
             <form action="">
                 <label for="nombre_instituto">
@@ -109,6 +114,7 @@
             </form>
         </section>
     </main>
+    <!-- footer -->
     <footer>
         <picture>
             <img src="./public/ministerioDeporte.png" alt="Logo ministerio de deporte">
