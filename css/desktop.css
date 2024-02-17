@@ -198,15 +198,22 @@ footer{
     width: 100%;
     background-color: var(--color-secundario);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer picture{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 footer h3{
-    left: 25%;
     color: var(--color-blanco);
     font-size: 3.0rem;
+    margin-right: 2em;
 }
 footer img{
     height: 6em;
@@ -215,7 +222,8 @@ footer img{
 }
 
 footer form{
-    width: 100%;
+    width:fit-content;
+    align-self: flex-start;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -227,17 +235,16 @@ footer form label{
     padding: 0.5em;
     display: flex;
     align-items:center;
-    width: 80vw;
+    width: 40em;
 }
 footer form input{
     border-radius: 5px;
     border: 1px solid var(--color-blanco);
-    padding: 0.5em; /* Agrega sangría de 10px en todos los lados del input */
     box-sizing: border-box; /* Hace que el ancho del texto incluya el padding y el borde */
     width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     
 }
 
@@ -249,14 +256,14 @@ footer form input:focus{
 footer form textarea{
     border-radius: 5px;
     border: 1px solid var(--color-blanco);
-    padding: 0.5em; /* Agrega sangría de 10px en todos los lados del input */
     box-sizing: border-box; /* Hace que el ancho del texto incluya el padding y el borde */
-    width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
+    width: 40em; /* Ajusta el ancho del input al 100% del contenedor */
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     resize: none;
 }
+
 
 footer form textarea:focus{
     outline: none;
