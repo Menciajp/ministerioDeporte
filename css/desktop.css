@@ -133,7 +133,7 @@ main{
 }
 main section{
     width: 100%;
-    max-width: 85vw;
+    max-width: 50vw;
     padding: 1em;
     font-size: 2.0rem;
     margin: 2.5em;
@@ -143,8 +143,10 @@ main section{
 
 main section form{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    padding: 0.5em;
+    justify-content: space-around;
+    align-items: center;
 }
 
 main section h3{
@@ -157,7 +159,7 @@ main section form label{
     display: flex;
 }
 main section form label span{
-    width: 6em;
+    width: 8em;
 }
 
 main section form label input{
